@@ -26,6 +26,8 @@ let myRandomNr;
 function makeRandomComputerChoice() {
     // Computer picks between rock, paper, scissors (random)
 
+    // I don't know how to start here:OOOO
+
     myRandomNr = Math.floor(Math.random() * 3) + 1;
 
     if (myRandomNr == 1) {
