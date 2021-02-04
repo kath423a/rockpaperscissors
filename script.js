@@ -21,20 +21,17 @@ function getUserSelection() {
     document.querySelector(".scissors").addEventListener("click", makeRandomComputerChoice);
 }
 
-let myRandomNr;
 
 function makeRandomComputerChoice() {
     // Computer picks between rock, paper, scissors (random)
+    myRandom = Math.floor(Math.random() * 3 + 1);
+        console.log(myRandom);
 
-    // I don't know how to start here:OOOO
-
-    myRandomNr = Math.floor(Math.random() * 3) + 1;
-
-    if (myRandomNr == 1) {
-
-    }
-
+    //document.querySelector(".win").classList.add("hidden");
+    //document.querySelector(".lose").classList.add("hidden");
+    //document.querySelector(".draw").classList.add("hidden");
   
+    
 
     showAnimations();
 }
@@ -44,6 +41,9 @@ function makeRandomComputerChoice() {
 function showAnimations() {
 
     // Show animations when user clicks and computer picks random 
+    // Make the animation "shake"
+    document.querySelector("#player1").classList.add("shake");
+    document.querySelector("#player2").classList.add("shake");
 
 
     determineWinner();
