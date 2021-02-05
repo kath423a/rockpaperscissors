@@ -92,7 +92,6 @@ function makeRandomComputerChoice() {
 }
 
 
-
 function showAnimations() {
 
     // Show animations when user clicks and computer picks random 
